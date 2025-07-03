@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale = 1.0">
         <title>New Villians</title>
         <link rel="stylesheet" href="styles/index.css">
-        <link rel="icon" href="images/NV-Logo.png">
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -13,14 +13,25 @@
     </head>
     <body>
         <section class="nav-bar">
-            <a href="index.html"><img src="images/NV-Logo.png" width="150px" height="80px"></a>
-            <div class="nav-links">
-                <a href="#">Home</a>
-                <a href="#">Shop</a>
-                <a href="#">About</a>
-                <a href="#">Gallery</a>
-                <a href="#">Contact</a>
+            <div class="nav-branding">
+                 <a href="index.html"><img src="images/NV-Logo.png" width="150px" height="80px"></a>
+
+                <div class="hamburger" id="hamburger">
+                    <i class="fa fa-bars open-icon"></i>
+                    <i class="fa fa-times close-icon"></i>
+                </div>
             </div>
+           
+            <div class="nav-menu" id="nav-menu">
+                <div class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#">Shop</a>
+                    <a href="#">About</a>
+                    <a href="#">Gallery</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+           
             <div class="nav-icons">
                 <img id="cart" src="images/shopping-cart-round.svg" width="50px" height="50px">
                 <img id="account" src="images/account-icon.png" width="40px" height="40px">
@@ -37,7 +48,7 @@
                 <p>Be the first to wear this season’s latest looks. Handpicked and freshly styled.</p>
                 <a href="#">SEE WHAT'S NEW</a>
             </div>
-            <div class="container">
+            <div class="items-container">
                 <div class="item-card">
                     <a href="#"><img src="images/new-arrivals-img-1.png"></a>
                     <a href="#">T Shirts</a>
@@ -95,28 +106,28 @@
             <h1>Our Categories</h1>
             <h2>Explore a wide range of styles, handpicked to suit every taste and need.</h2>
             <div class="category-img">
-                <div class="img-container">
+                <div class="category-card">
                     <img src="images/category-01.jpg">
                     <div class="label">
                         <p>Mens Wear</p>
                         <a href="#">Shop Now</a>
                     </div>
                 </div>
-                <div class="img-container">
+                <div class="category-card">
                     <img src="images/category-02.jpg">
                     <div class="label">
                         <p>Womens Wear</p>
                         <a href="#">Shop Now</a>
                     </div>
                 </div>
-                <div class="img-container">
+                <div class="category-card">
                     <img src="images/category-03.jpg">
                     <div class="label">
                         <p>Merch</p>
                         <a>Shop Now</a>
                     </div>
                 </div>
-                <div class="img-container">
+                <div class="category-card">
                     <img src="images/category-04.jpg">
                     <div class="label">
                         <p>Accessories</p>
@@ -277,5 +288,6 @@
             </div>
         </footer>
     <script src="scripts/countdown.js"></script>
+    <script src="scripts/hamburgerMenu.js"></script>
     </body>
 </html>
